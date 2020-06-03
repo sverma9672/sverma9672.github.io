@@ -357,6 +357,25 @@ a img.aligncenter {
     height: 100vh;
     width: 100%;
   }
+  @media only screen and (max-width: 768px) {
+    #header {
+        background-position: right;
+        height: 100vh;
+        width: 100%;
+      }
+      .header-content p {
+        display: none;
+        margin: 0;
+      }
+    
+      .header-content h1 {
+        font-size: 10px;
+        font-weight: 200;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
   
   
   #header .header-content {
