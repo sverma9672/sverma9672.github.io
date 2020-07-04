@@ -85,21 +85,3 @@ $("#name").focus(function () {
   $("#success").html("");
 });
 
-var typed = $(".typed");
-
-$(function () {
-  typed.typed({
-    strings: [
-      "Shubham Verma.",
-      "Android Developer.",
-      "Software Developer.",
-      "Data Analyst.",
-      "Research Oriented.",
-      "Content Writer.",
-      "Business Associate.",
-      "Lead Singer.",
-    ],
-    typeSpeed: 100,
-    loop: true,
-  });
-});
