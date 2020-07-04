@@ -176,7 +176,9 @@ ul, li, ol{
 	list-style: none;
 	padding: 0px;
 }
-
+.animation{
+    opacity: 0;
+}
 
 /*------------------------------------------------------------------
     WP CORE

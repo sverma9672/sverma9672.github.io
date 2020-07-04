@@ -20,6 +20,7 @@
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="js/animate.css">
 <!-- Site CSS -->
 <link rel="stylesheet" href="style.css">
 <!-- Responsive CSS -->
@@ -54,7 +55,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img class="img-fluid" src="uploads/logo.jpg" alt="" style="width: 150px; height: 60px;" />
+                <img class="img-fluid " src="uploads/logo.jpg" alt="" style="width: 150px; height: 60px;" />
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -116,8 +117,8 @@
 
                 <div class="col-md-4">
                     <div class="right-box-pro">
-                        <img src="uploads/bestimage.jpg" alt="" class="img-fluid img-rounded"
-                            style="width: 350px; height: 500px;">
+                        <img src="uploads/bestimage.jpg" alt="" class="img-fluid img-rounded animation "
+                            data-animation="fadeInLeft" style="width: 350px; height: 500px;">
                     </div><!-- end media -->
                 </div><!-- end col -->
                 <div class="col-md-8">
@@ -140,8 +141,8 @@
                             new technologies and likes to perform research making hybrid technologies out of previous
                             researches to give efficient outputs. </p>
 
-                        <a href="ShubhamResume.pdf" class="sim-btn btn-hover-lt" download><span href="ShubhamResume.pdf"
-                                class="btn-text">Download CV</span></a>
+                        <a href="ShubhamResume.pdf" class="sim-btn btn-hover-lt " download><span
+                                href="ShubhamResume.pdf" class="btn-text">Download CV</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -157,7 +158,7 @@
             </div><!-- end title -->
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 animation " data-animation="fadeInLeft">
                     <div class="services-inner-box " style=" background-image: url(uploads/Interst1.jpg);
                     background-position: center ;
                     background-size: cover; height: 250px;">
@@ -168,7 +169,7 @@
                         <p></p>
                     </div>
                 </div><!-- end col -->
-                <div class="col-md-4">
+                <div class="col-md-4 animation " data-animation="fadeInLeft">
                     <div class="services-inner-box " style=" background-image: url(uploads/interest2.jpg);
                     background-position: center ;
                     background-size: cover;height: 250px;">
@@ -179,7 +180,7 @@
                         <p></p>
                     </div>
                 </div><!-- end col -->
-                <div class="col-md-4">
+                <div class="col-md-4 animation " data-animation="fadeInLeft">
                     <div class="services-inner-box " style=" background-image: url(uploads/interset3.jpg);
                     background-position: center ;
                     background-size: cover;height: 250px;">
@@ -190,7 +191,7 @@
                         <p></p>
                     </div>
                 </div><!-- end col -->
-                <div class="col-md-4">
+                <div class="col-md-4 animation " data-animation="fadeInLeft">
                     <div class="services-inner-box " style=" background-image: url(uploads/Interest4.png);
                     background-position: center ;
                     background-size: cover;height: 250px;">
@@ -201,7 +202,7 @@
                         <p></p>
                     </div>
                 </div><!-- end col -->
-                <div class="col-md-4">
+                <div class="col-md-4 animation " data-animation="fadeInLeft">
                     <div class="services-inner-box " style=" background-image: url(uploads/interest0.jpg);
                     background-position:center ;
                     background-size:cover;height: 250px;">
@@ -212,7 +213,7 @@
                         <p></p>
                     </div>
                 </div><!-- end col -->
-                <div class="col-md-4">
+                <div class="col-md-4 animation " data-animation="fadeInLeft">
                     <div class="services-inner-box " style=" background-image: url(uploads/interest6.jpg);
                     background-position: center ;
                     background-size: cover;height: 250px;">
@@ -223,7 +224,7 @@
                         <p></p>
                     </div>
                 </div><!-- end col -->
-                <div class="col-md-4">
+                <div class="col-md-4 animation " data-animation="fadeInLeft">
                     <div class="services-inner-box " style=" background-image: url(uploads/interest7.png);
                     background-position: left ;
                     background-size: cover;height: 250px;">
@@ -234,7 +235,7 @@
                         <p></p>
                     </div>
                 </div><!-- end col -->
-                <div class="col-md-4">
+                <div class="col-md-4 animation " data-animation="fadeInLeft">
                     <div class="services-inner-box " style=" background-image: url(uploads/interest8.jpg);
                     background-position: center ;
                     background-size: cover;height: 250px;">
@@ -245,7 +246,7 @@
                         <p></p>
                     </div>
                 </div><!-- end col -->
-                <div class="col-md-4">
+                <div class="col-md-4 animation " data-animation="fadeInLeft">
                     <div class="services-inner-box " style=" background-image: url(uploads/interest9.jpg);
                     background-position: center ;
                     background-size: cover;height: 250px;">
@@ -463,9 +464,10 @@
                     <p class="footer-links">
                         <a href="#">Home</a>
                         <a href="#about">About</a>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </p>
                     <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">Shubham Verma</a> Design
+
                         By :
                         <a href="https://kartikchoudhary.herokuapp.com">Kartik Choudhary</a></p>
                 </div>
@@ -492,6 +494,9 @@
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/jquery.vide.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
